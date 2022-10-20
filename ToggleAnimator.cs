@@ -9,7 +9,7 @@ public class ToggleAnimation: MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        Animaotr animator = target.GetComponent<Animator>();
+        Animator animator = target.GetComponent<Animator>();
         animator.enabled = !animator.enabled;
 
     }
