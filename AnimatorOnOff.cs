@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimatorOnOff: MonoBehaviour
 {
     public GameObject target;
+    public int timeInSeconds = 5;
 
     void OnTriggerEnter(Collider other)
     {
@@ -16,7 +17,7 @@ public class AnimatorOnOff: MonoBehaviour
         Animator animator = target.GetComponent<Animator>();
         animator.enabled = true;
 
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(timeInSeconds);
 
         animator.enabled = false;
 
