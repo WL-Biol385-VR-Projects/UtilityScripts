@@ -17,9 +17,9 @@ public class MoleculeSpawner : MonoBehaviour
 
     for (var i = 0; i < moleculeCount; i++)
     {
-        float x = Random.Range(-1 * maxDistance, maxDistance);
-        float y = Random.Range(-1 * maxDistance, maxDistance);
-        float z = Random.Range(-1 * maxDistance, maxDistance);
+        float x = this.transform.position.x + Random.Range(-1 * maxDistance, maxDistance);
+        float y = this.transform.position.y + Random.Range(-1 * maxDistance, maxDistance);
+        float z = this.transform.position.z + Random.Range(-1 * maxDistance, maxDistance);
 
         Transform obj = (Transform)Instantiate(moleculePrefab, new Vector3(x, y, z), Quaternion.identity);
 
