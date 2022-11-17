@@ -17,8 +17,8 @@ public class MoleculeSpawner : MonoBehaviour
 
     for (var i = 0; i < moleculeCount; i++)
     {
-        float x = Random.Range(-1 * maxDistance, maxDistance),
-        float y = Random.Range(-1 * maxDistance, maxDistance),
+        float x = Random.Range(-1 * maxDistance, maxDistance);
+        float y = Random.Range(-1 * maxDistance, maxDistance);
         float z = Random.Range(-1 * maxDistance, maxDistance);
 
         Transform obj = (Transform)Instantiate(moleculePrefab, new Vector3(x, y, z), Quaternion.identity);
@@ -31,6 +31,11 @@ public class MoleculeSpawner : MonoBehaviour
 
     }
 
+  }
+
+  void Start()
+  {
+    spawnMolecules();
   }
 
 
