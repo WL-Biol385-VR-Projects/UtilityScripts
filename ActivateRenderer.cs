@@ -7,6 +7,8 @@ public class ActivateRenderer: MonoBehaviour
     public GameObject target;
     public bool activate = true;
 
+    private Renderer rend;
+
     void OnTriggerEnter(Collider other)
     {
         rend = target.GetComponent<Renderer>();
