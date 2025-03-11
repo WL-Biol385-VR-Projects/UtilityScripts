@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivateTargetOnTag: MonoBehaviour
+public class MoveTargetOnTag: MonoBehaviour
 {
     public GameObject target;
     public bool activate = true;
