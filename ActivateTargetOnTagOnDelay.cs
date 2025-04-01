@@ -7,6 +7,7 @@ public class ActivateTargetOnTagOnDelay: MonoBehaviour
     public GameObject target;
     public bool activate = true;
     public int delay = 3;
+    public string collidingTag;
 
     void OnTriggerEnter(Collider other)
     {
