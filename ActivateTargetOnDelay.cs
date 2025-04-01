@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivateTarget: MonoBehaviour
+public class ActivateTargetOnDelay: MonoBehaviour
 {
     public GameObject target;
     public bool activate = true;
